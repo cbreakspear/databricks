@@ -17,7 +17,7 @@ jobs:
      - name: Run a databricks notebook
        uses: databricks/run-notebook@v0
        with:
-         path: /Users/cbreakspear@prolifics.com/samplenotebook.py
+         workspace-notebook-path: /Users/cbreakspear@prolifics.com/samplenotebook.py
          databricks-host: https://adb-2734394513485551.11.azuredatabricks.net
          databricks-token: ${{ secrets.DATABRICKS_TOKEN }}
          git-commit: ${{ github.event.pull_request.head.sha }}
