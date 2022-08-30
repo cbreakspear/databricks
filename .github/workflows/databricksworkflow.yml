@@ -18,7 +18,7 @@ jobs:
        uses: databricks/run-notebook@v0
        with:
          local-notebook-path: ./workbooks/1-first.py
-         databricks-host: https://adb-4568596633874886.6.azuredatabricks.net
+         databricks-host: https://adb-3469227931728291.11.azuredatabricks.net
          databricks-token: ${{ secrets.DATABRICKS_TOKEN }}
          git-commit: ${{ github.event.pull_request.head.sha }}
          new-cluster-json: >
