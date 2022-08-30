@@ -10,8 +10,8 @@
 # COMMAND ----------
 
 # File location and type
-file_location = "/FileStore/tables/SampleData.xlsx"
-file_type = "xlsx"
+file_location = "/FileStore/tables/SampleFile.csv"
+file_type = "csv"
 
 # CSV options
 infer_schema = "false"
