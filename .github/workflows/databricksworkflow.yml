@@ -9,6 +9,8 @@ on:
 jobs:
  run-databricks-notebook:
    runs-on: ubuntu-latest
+   environment:
+    name: 'Development'
    steps:
      - name: Checkout repo
        uses: actions/checkout@v2
