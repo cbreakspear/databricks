@@ -15,7 +15,7 @@ jobs:
      - name: Checkout repo
        uses: actions/checkout@v2
      - name: databricks-import-directory
-       uses: ./
+       uses: microsoft/databricks-import-directory@v1.0.0
        with:
           databricks-host: https://adb-3469227931728291.11.azuredatabricks.net
           databricks-token: ${{ secrets.DATABRICKS_TOKEN }}
