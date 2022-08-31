@@ -4,7 +4,7 @@
 
 STEP 1: Make sure your Databricks cluster is created
 
-STEP 2: Upload you csv file for data to  FILESTORE/DATA
+STEP 2: Upload you csv file for data to  DBFS: FILESTORE/DATA or where ever you choose
 
 STEP 3: Create the token in user settings within Databricks
 
