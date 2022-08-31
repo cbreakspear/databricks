@@ -51,5 +51,9 @@ df.createOrReplaceTempView(temp_table_name)
 
 permanent_table_name = "SampleData_FROM_CB"
 
-df.write.format("parquet").saveAsTable(permanent_table_name)
-print("TABLE ALREADY EXISTS")
+
+
+if spark._jsparkSession.catalog().tableExists('default', permanent_table_name):
+      print("TABLE ALREADY EXISTS")
+else:
+  df.write.format("parquet").saveAsTable(permanent_table_name)
