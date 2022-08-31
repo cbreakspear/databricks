@@ -21,8 +21,8 @@ jobs:
        with:
           databricks-host: https://adb-3469227931728291.11.azuredatabricks.net
           databricks-token: ${{ secrets.DATABRICKS_TOKEN }}
-          local-path: ./DataFiles/SampleFile2.csv
-          remote-path: /dbfs/FileStore/tables/CBDataFiles/SampleFile2.csv
+          local-path: ./DataFiles
+          remote-path: /dbfs/FileStore/tables/CBDataFiles
      - name: Run a databricks notebook
        uses: databricks/run-notebook@v0
        with:
