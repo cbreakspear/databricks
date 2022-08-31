@@ -11,7 +11,7 @@
 
 # File location and type
 from pickle import FALSE
-
+from pyspark.sql import SparkSession, Row
 
 file_location = "/FileStore/tables/SampleFile.csv"
 file_type = "csv"
@@ -53,6 +53,6 @@ df.createOrReplaceTempView(temp_table_name)
 # To do so, choose your table name and uncomment the bottom line.
 
 permanent_table_name = "SampleData_FROM_CB"
-    spark.catalog.tableExists(permanent_table_name)
+spark.catalog.tableExists(permanent_table_name)
 FALSE
 df.write.format("parquet").saveAsTable(permanent_table_name)
